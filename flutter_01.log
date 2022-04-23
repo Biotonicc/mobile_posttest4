@@ -1,0 +1,70 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+StateError: Bad state: No context with the running Dart application.
+
+```
+#0      RemoteDebuggerExecutionContext.id (package:dwds/src/debugging/execution_context.dart:55:7)
+<asynchronous suspension>
+#1      AppInspector._getExtensionRpcs (package:dwds/src/debugging/inspector.dart:538:20)
+<asynchronous suspension>
+#2      AppInspector._initialize (package:dwds/src/debugging/inspector.dart:97:34)
+<asynchronous suspension>
+#3      AppInspector.initialize (package:dwds/src/debugging/inspector.dart:160:5)
+<asynchronous suspension>
+#4      ChromeProxyService.createIsolate (package:dwds/src/services/chrome_proxy_service.dart:216:18)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, 2.13.0-0.1.pre, on Microsoft Windows [Version 10.0.19044.1645], locale en-ID)
+    • Flutter version 2.13.0-0.1.pre at C:\Users\Public\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 13a2fb10b8 (10 days ago), 2022-04-12 15:34:25 -0500
+    • Engine revision 499984f99c
+    • Dart version 2.17.0 (build 2.17.0-266.1.beta)
+    • DevTools version 2.12.1
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.3)
+    • Android SDK at C:\Users\Public\Android\sdk
+    • Platform android-29, build-tools 29.0.3
+    • ANDROID_HOME = C:\Users\Public\Android
+    • Java binary at: C:\Program Files\Microsoft\jdk-17.0.2.8-hotspot\bin\java
+    • Java version OpenJDK Runtime Environment Microsoft-30338 (build 17.0.2+8-LTS)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+
+[✗] Visual Studio - develop for Windows
+    ✗ Visual Studio not installed; this is necessary for Windows development.
+      Download at https://visualstudio.microsoft.com/downloads/.
+      Please install the "Desktop development with C++" workload, including all of its default components
+
+[!] Android Studio (not installed)
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/docs/get-started/install/windows#android-setup for detailed instructions).
+
+[✓] VS Code (version 1.41.1)
+    • VS Code at C:\Users\Muhammad Rezky\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.8.1
+
+[✓] Connected device (3 available)
+    • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.19044.1645]
+    • Chrome (web)      • chrome  • web-javascript • Google Chrome 100.0.4896.127
+    • Edge (web)        • edge    • web-javascript • Microsoft Edge 100.0.1185.44
+
+[!] HTTP Host Availability
+    ✗ HTTP host "https://maven.google.com/" is not reachable. Reason: An error occurred while checking the HTTP host: Failed host lookup:
+      'maven.google.com'
+
+! Doctor found issues in 3 categories.
+```
